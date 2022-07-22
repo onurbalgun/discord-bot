@@ -1,11 +1,12 @@
 const Discord = require('discord.js'); 
+const API_KEY = process.env.API_KEY
 const client = new Discord.Client({ intents: [Discord.Intents.FLAGS.GUILDS,
   Discord.Intents.FLAGS.GUILD_VOICE_STATES,
   Discord.Intents.FLAGS.GUILD_MESSAGES,
   Discord.Intents.FLAGS.GUILD_MEMBERS,
   Discord.Intents.FLAGS.GUILD_PRESENCES
 ] });
-client.login(env.API_KEY);
+client.login(API_KEY);
 client.on('ready',readyDiscord)
  
  
